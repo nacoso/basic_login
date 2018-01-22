@@ -13,7 +13,8 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).
+    params. #"STRONG PARAMETERS"
+    require(:user).
     permit(:username,
             :password,
             :password_confirmation)
